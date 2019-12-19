@@ -1,0 +1,299 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-image: url("../media/Schermafbeelding 2019-12-19 om 14.31.58.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    --webkit-user-select: none;
+}
+
+html {
+    height: 100%;
+}
+
+.search {
+    text-align: center;
+    margin-top: 0;
+    width:20em;
+    height:2.9em;
+    background-color: white;
+    border-radius: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items:center;
+    align-content: center;
+    opacity: 85%;
+    border: 0.1em solid darkgray;
+}
+
+.searchfield {
+    width:85%;
+    height:70%;
+    border-radius: 5em;
+    border: none;
+    opacity: 85%;
+    text-align: center;
+    margin-left: 2em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    font-size: 1em;
+}
+
+.searchbutton{
+    width: 5em;
+    padding:0;
+    margin:0;
+}
+
+.searchicon {
+    height: 100%;
+    width: 100%;
+    float:right;
+}
+
+button:hover {
+    opacity: 60%;
+    
+}
+
+.headericon {
+    height: 1.6em;
+    width: 1.6em;
+    margin-left: 0.5em;
+    margin-top: 0.3em;
+    
+}
+
+header {
+    height: 2.5em;
+}
+
+.wifisection {
+    height: 10em;
+    
+}
+
+.wifi1 {
+    float: right;
+    margin: 9em 3em;
+}
+
+.wifi2 {
+    float: left;
+    margin-top: 10em;
+    margin-left: 3em;
+}
+
+.wifi3 {
+    float:left;
+    margin-top: 8em;
+    margin-left: 10em;
+}
+
+.wifi-icon {
+    height: 3em;
+    width:3em;
+}
+
+.toplist {
+    background-color: white;
+    border: 0.1em solid darkgray;
+    border-radius: 5em;
+    padding: 0.5em 2.5em;
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    bottom: 2em;
+    position: absolute;
+    width: 100vw;
+    text-align: center;
+}
+
+/* einde index.html */
+
+.background2 {
+    background-color: rgba(0,0,0,0.7);
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.backbutton-area {
+    grid-area: backbutton;
+}
+
+.backbutton {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 0.3em;
+    font-size: 1.5em;
+}
+
+h1 {
+    color: white;
+    text-shadow: -0.07em 0 red;
+    margin: 0;
+    font-size: 3.3em;
+    padding-top: 0.3em;
+}
+
+.infoheader {
+    background-color: dimgray;
+    min-width: 100%;
+    height: 9em;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas: 
+        "backbutton image"
+        "title image";
+}
+
+.star1 {
+    width: 1.5em;
+    height: 1.5em;
+    padding-top: 2.3em;
+    padding-left:0.5em;
+}
+
+.headertextsection-title {
+    display: flex;
+    flex-direction: row;
+}
+
+p {
+    margin-top: -0.5em;
+    margin-bottom: 0.2em; 
+    font-size: 1.3em;
+}
+
+.headertextsection {
+    grid-area: title;
+    margin-left: 1.5em;
+    margin-top: -1.9em;
+}
+
+.kfcimg {
+    grid-area: image;
+    height: 7.5em;
+    width: 7.5em;
+    float: right;
+    margin-left: 4em;
+    margin-top: 0.7em;
+}
+
+.stars {
+    width: 1.8em;
+    height: 1.8em;
+    flex-direction: row;
+    margin: auto 0.2em;
+    margin-top: 0.1em;
+}
+
+.stars-group1 {
+    margin-left: 5em;
+}
+
+.stars-group2 {
+    margin-left: 5.1em;
+}
+
+.stars-group3 {
+    margin-left: 4.4em;
+}
+
+.rating-segment {
+    display: flex;
+    margin: 0.9em; 
+}
+
+.ratingtext {
+    margin: 0 0;
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+}
+
+.ratebutton-container
+{
+    text-align: right;
+    padding: 0.9em 0 0 0;
+}
+
+.ratebutton {
+    background-color: white;
+    opacity: 90%;
+    border-radius: 5em;
+    padding: 0.1em 1.2em;
+    text-decoration: none;
+    color: black;
+    font-size: 0.7em;
+    margin-right: 1.5em;
+}
+
+.info-container {
+    grid-template-areas: "website route openingstijden";
+    grid-template-columns: 3fr 4fr 1fr;
+    background-color: white;
+    border-radius: 4em;
+    height: 6.5em;
+    width: 85%;
+    display: grid;
+    margin: auto;
+    text-align: center;
+    padding: 0 1.5em;
+}
+
+.website {
+    grid-area: website;
+    margin: auto;
+}
+
+.route {
+    grid-area: route;
+    margin: auto;
+}
+
+.openingstijden {
+    grid-area: openingstijden;
+    margin: auto;
+    margin-left: 0;
+}
+
+.info-image {
+    height: 2em;
+    width: 2em;
+    margin-bottom: 0.5em;
+}
+
+.openingstijden-image {
+    height: 6em;
+    width: 6em;
+}
+
+.compare-footer {
+    background-color: dimgray;
+    bottom: 0;
+    width: 100vw;
+    height: 3em;
+    position: absolute;
+}
+
+.footer-txt {
+    color:white;
+    text-shadow: -0.07em 0 red;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    display: block;
+}
