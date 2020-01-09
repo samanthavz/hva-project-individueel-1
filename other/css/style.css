@@ -51,6 +51,8 @@ html {
     width: 5em;
     padding:0;
     margin:0;
+    background-color: rgba(0,0,0,0);
+    border: none;
 }
 
 .searchicon {
@@ -207,8 +209,8 @@ p {
 
 .kfcimg {
     grid-area: image;
-    height: 6em;
-    width: 7em;
+    height: 5.3em;
+    width: 6.3em;
     float: right;
     margin-left: 4em;
     margin-top: 0.7em;
@@ -334,7 +336,7 @@ p {
     border-style: solid;
     margin: 0.4em 0 0.4em 0.34em;
     height: 2.5em;
-    width: 23.5em;
+    width: 20em;
     border-width: 0.06em;
 }
 
@@ -343,6 +345,8 @@ p {
     margin: 0.4em -0.5em 0 0;
     padding: 0;
     max-width: 6em;
+    background-color: rgba(0,0,0,0);
+    border: none;
 }
 
 .sendimg {
@@ -386,6 +390,7 @@ p {
 .login-header {
     background-color: black;
     min-width: 100%;
+    max-width: 100%;
     height: 17em;
     clip-path: polygon(0% 0%, 100% 0%, 100% 68%, 0 100%);
 }
@@ -441,7 +446,7 @@ p {
 }
 
 .login-footer {
-    bottom: 0em;
+    bottom: 0.3em;
     position:absolute;
 }
 
@@ -540,3 +545,36 @@ p {
 .text10 {
     margin: 0.6em!important;
 }
+
+/*einde top10.html */
+
+/*begin info2.html en info3.html */
+
+.starbucksimg {
+    width: 6.5em;
+    height: 5.5em;
+    margin: 0.9em;
+    grid-area: image;
+}
+
+.starbuckstitle {
+    font-size: 2.4em;
+    grid-area: title;
+}
+
+.star2 {
+    width: 1.5em;
+    height: 1.5em;
+    padding-top: 1.6em;
+    padding-left:0.5em; 
+}
+
+.mcdimg {
+    width: 5.5em;
+    height: 5em;
+    margin: 0.9em;
+    margin-top: 1.2em;
+    grid-area: image;
+}
+
+/* einde info2.html en info3.html */
