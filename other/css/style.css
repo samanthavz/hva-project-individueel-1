@@ -9,6 +9,7 @@ body {
     top: 0;
     left: 0;
     overflow: scroll;
+    user-select: none;
     --webkit-user-select: none;
 }
 
@@ -87,6 +88,11 @@ header {
 .wifisection {
     height: 10em;
     
+}
+
+.pointer {
+    margin: 15em 0 0 4em; 
+    height: 3em;
 }
 
 .wifi1 {
@@ -279,7 +285,7 @@ p {
 .ratebutton {
     background-color: white;
     opacity: 90%;
-    border-radius: 5em;
+    border-radius: 0.3em;
     padding: 0.1em 1.2em;
     text-decoration: none;
     color: black;
@@ -291,7 +297,7 @@ p {
     grid-template-areas: "website route openingstijden";
     grid-template-columns: 3fr 4fr 1fr;
     background-color: white;
-    border-radius: 1em;
+    border-radius: 0.3em;
     height: 6.5em;
     width: 80%;
     display: grid;
@@ -335,7 +341,7 @@ p {
 
 .info-container2 {
     background-color: white;
-    border-radius: 1em;
+    border-radius: 0.3em;
     height: 13em;
     width: 90%;
     margin: auto;
@@ -356,15 +362,15 @@ p {
 
 .textdiv form input {
     border-style: solid;
-    margin: 0.4em 0 0.4em 0.34em;
+    margin: 0.4em 0 0.4em 0.45em;
     height: 2.5em;
-    width: 20em;
+    width: 23em;
     border-width: 0.06em;
 }
 
 .textdiv form button {
     float: right;
-    margin: 0.4em -0.5em 0 0;
+    margin: 0.4em -0.4em 0 0;
     padding: 0;
     max-width: 6em;
     background-color: rgba(0,0,0,0);
@@ -643,8 +649,75 @@ p {
 .logout {
     color: red;
     text-decoration: none;
-    margin-left: 18em;
+    margin-left: 17.5em;
     bottom: 0;
+    display: block;
+    margin-top: 1em;
+}
+
+.profileheadersection {
+    display: flex;
+    border-bottom: 0.03em solid black;
+    width: 21em;
+    margin: 0 auto 0 auto;
+}
+
+.profilepic {
+    width: 3em;
+    height: 3em;
+    margin: 1em;
+}
+
+.profiletekst {
+    margin: 0.6em 1em 0.2em 0;
+}
+
+.profiletekst h2 {
+    margin: 0 0 0.5em -4.3em;
+    padding: 0;
+}
+
+.profilepsection {
+    display: flex;
+}
+
+.editknop {
+    font-size: 0.7em;
+    background-color: gainsboro;
+    margin: -0.3em 0 0 2em;
+    height: 1.3em;
+    width: 2.5em;
+}
+
+
+.fr {
+    display: flex;
+    border-bottom: 0.03em solid black;
+    width: 21em;
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-bottom: 0.1em;
+    text-decoration: none;
+}
+
+.fr p {
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    padding: 0.1em 0;
+    color: black;
+}
+
+.fr p img {
+    height: 1em;
+    margin-bottom: -0.1em;
+}
+
+.pointer1 {
+    margin-left: 10em;
+}
+
+.pointer2 {
+    margin-left: 12.2em;
 }
 
 /* einde profile.html */
@@ -657,4 +730,94 @@ p {
 
 .settings-title {
     margin-top: 2.5em!important;
+}
+
+.mapset {
+    width: 18em;
+    height: 2em;
+    display: flex;
+    border: 0.1em solid black;
+    margin: 0.5em auto 0 auto; 
+}
+
+.mapset h2 {
+    margin: 0;
+    font-size: 1em;
+    height: 1.7em;
+    width: 9em;
+    padding-top: 0.27em;
+}
+
+.mapset1 {
+    border-right: 0.1em solid black;
+    background-color: lightgrey;
+}
+
+.traveldiv {
+    display: flex;
+    justify-content: center;
+    border-bottom: 0.03em solid black;
+    width: 21em;
+    margin: auto;
+}
+
+.traveldiv img {
+    height: 2em;
+    width: 2em;
+    margin: 0.7em;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+}
+
+.cartravel {
+    border: 0.05em solid black;
+}
+
+.options {
+    width: 21em;
+    margin: auto;
+}
+
+.options p {
+    border-bottom: 0.03em solid black;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    height: 1.7em;
+    margin: auto;
+    text-align: left;
+}
+
+.options img {
+    height: 2em;
+    margin-bottom: -0.3em;
+    display: block;
+    float: right;
+    margin-top: -0.1em;
+}
+
+/* einde settings.html */
+
+/* begin data.html */
+
+.databody {
+    background-image: none;
+}
+
+.nodata {
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin: 45vh 0;
+}
+
+.nodata img {
+    margin-bottom: -0.1em;
+    height: 1em;
+}
+
+.dback {
+    font-size: 1em;
+    display: block;
+    margin: 0.5em 0 0 0.5em;
+    color: black;
 }
