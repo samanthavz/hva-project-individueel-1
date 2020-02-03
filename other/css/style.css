@@ -1,16 +1,18 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     background-image: url("../media/Schermafbeelding 2019-12-19 om 14.31.58.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* screenshot van https://www.google.nl/maps */
+    background-repeat: repeat;
+    background-size: 100vw 100vh;
+    height: 100vh;
+    width: 100vw;
     min-height: 100%;
     margin: 0;
     padding: 0;
     top: 0;
     left: 0;
     overflow: scroll;
-    user-select: none;
-    --webkit-user-select: none;
+    -webkit-user-select: none;
 }
 
 .body2 {
@@ -183,18 +185,19 @@ h1 {
     color: white;
     text-shadow: -0.07em 0 red;
     margin: 0;
-    font-size: 3.3em;
+    font-size: 2.3em;
     padding-top: 0.3em;
     letter-spacing: 0.07em;
 }
 
 .headertext {
+    font-size: 1.1em;
     color: white;
 }
 
 .infoheader {
     background-color: black;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0 100%);
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0 100%);
     min-width: 100%;
     height: 10em;
     margin: 0;
@@ -204,17 +207,19 @@ h1 {
         "backbutton image"
         "title image";
     position: fixed;
+    z-index: 1;
 }
 
 .infomain {
     top: 9.1em;
     position: relative;
+    z-index: 0;
 }
 
 .star1 {
     width: 1.5em;
     height: 1.5em;
-    padding-top: 2.3em;
+    padding-top: 1.3em;
     padding-left:0.5em;
 }
 
@@ -253,15 +258,15 @@ p {
 }
 
 .stars-group1 {
-    margin-left: 5em;
+    margin-left: auto;
 }
 
 .stars-group2 {
-    margin-left: 5.1em;
+    margin-left: auto;
 }
 
 .stars-group3 {
-    margin-left: 4.4em;
+    margin-left: auto;
 }
 
 .rating-segment {
@@ -343,7 +348,7 @@ p {
     background-color: white;
     border-radius: 0.3em;
     height: 13em;
-    width: 90%;
+    max-width: 90%;
     margin: auto;
     margin-top: 2em;
     text-align: center;
@@ -355,7 +360,7 @@ p {
 .textdiv {
     border-style: solid;
     width: 98%;
-    margin: 0.5em auto 0.5em auto;
+    margin: 0.5em auto;
     max-height: 3em;
     border-width: 0.06em;
 }
@@ -364,7 +369,7 @@ p {
     border-style: solid;
     margin: 0.4em 0 0.4em 0.45em;
     height: 2.5em;
-    width: 23em;
+    width: 72%;
     border-width: 0.06em;
 }
 
@@ -395,7 +400,7 @@ p {
 
 .compare-footer {
     background-color: black;
-    clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0 100%);
     bottom: 0;
     width: 100vw;
     height: 4em;
@@ -420,7 +425,7 @@ p {
     min-width: 100%;
     max-width: 100%;
     height: 17em;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 68%, 0 100%);
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 68%, 0 100%);
 }
 
 
@@ -476,7 +481,8 @@ p {
 }
 
 .login-footer {
-    bottom: 0.3em;
+    bottom: 0em;
+    margin-bottom: 2em;
     position:absolute;
 }
 
@@ -523,7 +529,7 @@ p {
     height: 6.5em;
     position: fixed;
     min-width: 100%;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0 100%);
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0 100%);
     z-index: 1;
 }
 
@@ -569,7 +575,7 @@ p {
 }
 
 .nmr10 {
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 /* Hier heb ik important gebruikt, omdat .top10-main a section p specifieker is volgens css en het mij niet lukte om dat te overwriten */
@@ -589,14 +595,14 @@ p {
 }
 
 .starbuckstitle {
-    font-size: 2.4em;
+    font-size: 2em;
     grid-area: title;
 }
 
 .star2 {
     width: 1.5em;
     height: 1.5em;
-    padding-top: 1.6em;
+    padding-top: 1.1em;
     padding-left:0.5em; 
 }
 
@@ -616,14 +622,16 @@ p {
     bottom: 0;
     background-color: white;
     height: 19em;
-    clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0 100%);
+    overflow: none;
+    position: fixed;
 }
 
 .profile-footer nav {
     background-color: black;
     top: 0;
     height: 6em;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 37.5%, 0 100%);
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 37.5%, 0 100%);
     display: flex;
 }
 
@@ -821,3 +829,77 @@ p {
     margin: 0.5em 0 0 0.5em;
     color: black;
 }
+
+/* begin compare.html */
+
+.compareheader {
+    background-color: black;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 0 100%);
+    min-width: 100%;
+    height: 10em;
+    margin: 0;
+    padding: 0;
+}
+
+.compareheader section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -1em;
+    margin-left: 0.5em;
+}
+
+.compareheader section section{
+    display: flex;
+    flex-direction: column;
+}
+
+.compareheader section section h1 {
+    font-size: 1.8em;
+}
+
+.compareheader section section p {
+    color: white;
+    font-size: 1em;
+}
+
+.compareheader section section div {
+    margin-left: -0.4em;
+}
+
+.compare-main {
+    display: flex;
+    flex-direction: column;
+    top: 1.5em;
+    position: relative;
+    z-index: 0;
+    
+}
+
+.compare-main section {
+    display: flex;
+    justify-content: center;
+}
+
+.compare-main a section p {
+    max-width: 30%;
+    margin: 0.5em;
+    font-size: 1em;
+    padding-top: 0.5em;
+    color: lightgray;
+}
+
+.compare-main a {
+    text-decoration: none;
+}
+
+.compare-main a section div {
+    margin-top: 2em;
+}
+
+.first-word2 {
+    font-size: 1.2em;
+    letter-spacing: 0.09em;
+    color: white;
+}
+
